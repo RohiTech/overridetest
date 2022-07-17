@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Overridetest
+Bundle-SymbolicName: org.rohitech.overridetest;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: RohiTech
+Automatic-Module-Name: org.rohitech.overridetest
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.adempiere.base;bundle-version="8.2.0",
+ org.adempiere.plugin.utils;bundle-version="8.2.0"
+Bundle-Activator: org.adempiere.plugin.utils.AdempiereActivator
+Service-Component: OSGI-INF/InventoryModelFactory.xml
+Import-Package: org.osgi.service.event;version="1.4.0"
